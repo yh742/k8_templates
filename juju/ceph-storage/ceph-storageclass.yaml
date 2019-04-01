@@ -1,0 +1,23 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  labels:
+    cdk-addons: "true"
+  name: ceph-rbd
+parameters:
+  adminid: admin
+  csiNodePublishSecretName: csi-rbd-secret
+  csiNodePublishSecretNamespace: default
+  csiProvisionerSecretName: csi-rbd-secret
+  csiProvisionerSecretNamespace: default
+  fsType: ext4
+  imageFeatures: layering
+  imageFormat: "2"
+  # enter monitor ip location here
+  monitors: 172.27.101.113:6789 172.27.101.114:6789 172.27.101.115:6789
+  # use rbd by default
+  pool: rbd
+  userid: admin
+provisioner: csi-rbdplugin
+reclaimPolicy: Delete
+volumeBindingMode: Immediate
