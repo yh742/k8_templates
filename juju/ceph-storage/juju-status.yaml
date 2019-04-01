@@ -1,0 +1,717 @@
+model:
+  name: test-ceph
+  type: iaas
+  controller: maas-v4n100-controller
+  cloud: v4n100-maas
+  version: 2.3.7
+  model-status:
+    current: available
+    since: 29 Mar 2019 14:58:28-04:00
+  meter-status:
+    color: amber
+    message: user verification pending
+  sla: unsupported
+machines:
+  "0":
+    juju-status:
+      current: started
+      since: 29 Mar 2019 16:22:38-04:00
+      version: 2.3.7
+    dns-name: 172.27.101.113
+    ip-addresses:
+    - 172.27.101.113
+    instance-id: xtndrh
+    machine-status:
+      current: running
+      message: Deployed
+      since: 29 Mar 2019 16:20:10-04:00
+    series: xenial
+    network-interfaces:
+      eth0:
+        ip-addresses:
+        - 172.27.101.113
+        mac-address: 52:54:00:c2:a0:45
+        gateway: 172.27.101.254
+        dns-nameservers:
+        - 172.27.100.1
+        - 1.1.1.1
+        - 8.8.8.8
+        space: management
+        is-up: true
+    constraints: tags=ceph-mon
+    hardware: arch=amd64 cores=2 mem=4096M tags=virtual,ceph-mon availability-zone=default
+  "1":
+    juju-status:
+      current: started
+      since: 29 Mar 2019 16:23:01-04:00
+      version: 2.3.7
+    dns-name: 172.27.101.114
+    ip-addresses:
+    - 172.27.101.114
+    instance-id: 7gqw86
+    machine-status:
+      current: running
+      message: Deployed
+      since: 29 Mar 2019 16:20:40-04:00
+    series: xenial
+    network-interfaces:
+      eth0:
+        ip-addresses:
+        - 172.27.101.114
+        mac-address: 52:54:00:e2:6d:f3
+        gateway: 172.27.101.254
+        dns-nameservers:
+        - 172.27.100.1
+        - 1.1.1.1
+        - 8.8.8.8
+        space: management
+        is-up: true
+    constraints: tags=ceph-mon
+    hardware: arch=amd64 cores=2 mem=4096M tags=virtual,ceph-mon availability-zone=default
+  "2":
+    juju-status:
+      current: started
+      since: 29 Mar 2019 16:23:36-04:00
+      version: 2.3.7
+    dns-name: 172.27.101.115
+    ip-addresses:
+    - 172.27.101.115
+    instance-id: 6tygdr
+    machine-status:
+      current: running
+      message: Deployed
+      since: 29 Mar 2019 16:21:18-04:00
+    series: xenial
+    network-interfaces:
+      eth0:
+        ip-addresses:
+        - 172.27.101.115
+        mac-address: 52:54:00:f2:9a:f4
+        gateway: 172.27.101.254
+        dns-nameservers:
+        - 172.27.100.1
+        - 1.1.1.1
+        - 8.8.8.8
+        space: management
+        is-up: true
+    constraints: tags=ceph-mon
+    hardware: arch=amd64 cores=2 mem=4096M tags=virtual,ceph-mon availability-zone=default
+  "3":
+    juju-status:
+      current: started
+      since: 29 Mar 2019 16:23:41-04:00
+      version: 2.3.7
+    dns-name: 172.27.101.116
+    ip-addresses:
+    - 172.27.101.116
+    instance-id: bsmebd
+    machine-status:
+      current: running
+      message: Deployed
+      since: 29 Mar 2019 16:21:22-04:00
+    series: xenial
+    network-interfaces:
+      eth0:
+        ip-addresses:
+        - 172.27.101.116
+        mac-address: 52:54:00:7d:de:a5
+        gateway: 172.27.101.254
+        dns-nameservers:
+        - 172.27.100.1
+        - 1.1.1.1
+        - 8.8.8.8
+        space: management
+        is-up: true
+    constraints: tags=ceph-osd
+    hardware: arch=amd64 cores=2 mem=4096M tags=virtual,ceph-osd availability-zone=default
+  "4":
+    juju-status:
+      current: started
+      since: 29 Mar 2019 16:24:29-04:00
+      version: 2.3.7
+    dns-name: 172.27.101.117
+    ip-addresses:
+    - 172.27.101.117
+    instance-id: msrcxp
+    machine-status:
+      current: running
+      message: Deployed
+      since: 29 Mar 2019 16:22:08-04:00
+    series: xenial
+    network-interfaces:
+      eth0:
+        ip-addresses:
+        - 172.27.101.117
+        mac-address: 52:54:00:5d:8a:86
+        gateway: 172.27.101.254
+        dns-nameservers:
+        - 172.27.100.1
+        - 1.1.1.1
+        - 8.8.8.8
+        space: management
+        is-up: true
+    constraints: tags=ceph-osd
+    hardware: arch=amd64 cores=2 mem=4096M tags=virtual,ceph-osd availability-zone=default
+  "5":
+    juju-status:
+      current: started
+      since: 29 Mar 2019 16:24:43-04:00
+      version: 2.3.7
+    dns-name: 172.27.101.118
+    ip-addresses:
+    - 172.27.101.118
+    instance-id: ame68k
+    machine-status:
+      current: running
+      message: Deployed
+      since: 29 Mar 2019 16:22:08-04:00
+    series: xenial
+    network-interfaces:
+      eth0:
+        ip-addresses:
+        - 172.27.101.118
+        mac-address: 52:54:00:ce:a8:59
+        gateway: 172.27.101.254
+        dns-nameservers:
+        - 172.27.100.1
+        - 1.1.1.1
+        - 8.8.8.8
+        space: management
+        is-up: true
+    constraints: tags=ceph-osd
+    hardware: arch=amd64 cores=2 mem=4096M tags=virtual,ceph-osd availability-zone=default
+  "47":
+    juju-status:
+      current: started
+      since: 01 Apr 2019 10:58:32-04:00
+      version: 2.3.7
+    dns-name: 172.27.101.152
+    ip-addresses:
+    - 172.27.101.152
+    instance-id: xp6rdp
+    machine-status:
+      current: running
+      message: Deployed
+      since: 01 Apr 2019 10:56:41-04:00
+    series: bionic
+    network-interfaces:
+      eth0:
+        ip-addresses:
+        - 172.27.101.152
+        mac-address: 52:54:00:f1:e4:04
+        gateway: 172.27.101.254
+        dns-nameservers:
+        - 172.27.100.1
+        - 1.1.1.1
+        - 8.8.8.8
+        space: management
+        is-up: true
+    constraints: tags=ceph-knode
+    hardware: arch=amd64 cores=2 mem=4096M tags=virtual,ceph-knode availability-zone=default
+  "48":
+    juju-status:
+      current: started
+      since: 01 Apr 2019 10:59:06-04:00
+      version: 2.3.7
+    dns-name: 172.27.101.153
+    ip-addresses:
+    - 172.27.101.153
+    instance-id: hgkd6y
+    machine-status:
+      current: running
+      message: Deployed
+      since: 01 Apr 2019 10:57:19-04:00
+    series: bionic
+    network-interfaces:
+      eth0:
+        ip-addresses:
+        - 172.27.101.153
+        mac-address: 52:54:00:d3:c5:5f
+        gateway: 172.27.101.254
+        dns-nameservers:
+        - 172.27.100.1
+        - 1.1.1.1
+        - 8.8.8.8
+        space: management
+        is-up: true
+    constraints: tags=ceph-knode
+    hardware: arch=amd64 cores=2 mem=4096M tags=virtual,ceph-knode availability-zone=default
+  "49":
+    juju-status:
+      current: started
+      since: 01 Apr 2019 10:59:43-04:00
+      version: 2.3.7
+    dns-name: 172.27.101.154
+    ip-addresses:
+    - 172.27.101.154
+    instance-id: ggqch3
+    machine-status:
+      current: running
+      message: Deployed
+      since: 01 Apr 2019 10:57:56-04:00
+    series: bionic
+    network-interfaces:
+      eth0:
+        ip-addresses:
+        - 172.27.101.154
+        mac-address: 52:54:00:e9:90:7b
+        gateway: 172.27.101.254
+        dns-nameservers:
+        - 172.27.100.1
+        - 1.1.1.1
+        - 8.8.8.8
+        space: management
+        is-up: true
+    constraints: tags=ceph-knode
+    hardware: arch=amd64 cores=2 mem=4096M tags=virtual,ceph-knode availability-zone=default
+  "50":
+    juju-status:
+      current: started
+      since: 01 Apr 2019 11:00:37-04:00
+      version: 2.3.7
+    dns-name: 172.27.101.156
+    ip-addresses:
+    - 172.27.101.156
+    instance-id: k4h8ak
+    machine-status:
+      current: running
+      message: Deployed
+      since: 01 Apr 2019 10:58:51-04:00
+    series: bionic
+    network-interfaces:
+      eth0:
+        ip-addresses:
+        - 172.27.101.156
+        mac-address: 52:54:00:07:42:4a
+        gateway: 172.27.101.254
+        dns-nameservers:
+        - 172.27.100.1
+        - 1.1.1.1
+        - 8.8.8.8
+        space: management
+        is-up: true
+    constraints: tags=ceph-knode
+    hardware: arch=amd64 cores=2 mem=4096M tags=virtual,ceph-knode availability-zone=default
+  "51":
+    juju-status:
+      current: started
+      since: 01 Apr 2019 10:59:48-04:00
+      version: 2.3.7
+    dns-name: 172.27.101.155
+    ip-addresses:
+    - 172.27.101.155
+    instance-id: hye3t4
+    machine-status:
+      current: running
+      message: Deployed
+      since: 01 Apr 2019 10:58:04-04:00
+    series: bionic
+    network-interfaces:
+      eth0:
+        ip-addresses:
+        - 172.27.101.155
+        mac-address: 52:54:00:32:3a:08
+        gateway: 172.27.101.254
+        dns-nameservers:
+        - 172.27.100.1
+        - 1.1.1.1
+        - 8.8.8.8
+        space: management
+        is-up: true
+    constraints: tags=ceph-knode
+    hardware: arch=amd64 cores=2 mem=4096M tags=virtual,ceph-knode availability-zone=default
+  "52":
+    juju-status:
+      current: started
+      since: 01 Apr 2019 11:01:01-04:00
+      version: 2.3.7
+    dns-name: 172.27.101.157
+    ip-addresses:
+    - 172.27.101.157
+    instance-id: dykbmt
+    machine-status:
+      current: running
+      message: Deployed
+      since: 01 Apr 2019 10:59:12-04:00
+    series: bionic
+    network-interfaces:
+      eth0:
+        ip-addresses:
+        - 172.27.101.157
+        mac-address: 52:54:00:4f:ee:36
+        gateway: 172.27.101.254
+        dns-nameservers:
+        - 172.27.100.1
+        - 1.1.1.1
+        - 8.8.8.8
+        space: management
+        is-up: true
+    constraints: tags=ceph-knode
+    hardware: arch=amd64 cores=2 mem=4096M tags=virtual,ceph-knode availability-zone=default
+applications:
+  ceph-mon:
+    charm: cs:ceph-mon-34
+    series: xenial
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: ceph-mon
+    charm-rev: 34
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready and clustered
+      since: 01 Apr 2019 14:53:52-04:00
+    relations:
+      admin:
+      - kubernetes-master
+      mon:
+      - ceph-mon
+      osd:
+      - ceph-osd
+    units:
+      ceph-mon/0:
+        workload-status:
+          current: active
+          message: Unit is ready and clustered
+          since: 01 Apr 2019 14:53:52-04:00
+        juju-status:
+          current: idle
+          since: 01 Apr 2019 11:48:59-04:00
+          version: 2.3.7
+        leader: true
+        machine: "0"
+        public-address: 172.27.101.113
+      ceph-mon/1:
+        workload-status:
+          current: active
+          message: Unit is ready and clustered
+          since: 01 Apr 2019 14:56:10-04:00
+        juju-status:
+          current: idle
+          since: 01 Apr 2019 11:13:56-04:00
+          version: 2.3.7
+        machine: "1"
+        public-address: 172.27.101.114
+      ceph-mon/2:
+        workload-status:
+          current: active
+          message: Unit is ready and clustered
+          since: 01 Apr 2019 14:53:39-04:00
+        juju-status:
+          current: idle
+          since: 01 Apr 2019 11:14:03-04:00
+          version: 2.3.7
+        machine: "2"
+        public-address: 172.27.101.115
+    version: 10.2.11
+  ceph-osd:
+    charm: cs:ceph-osd-278
+    series: xenial
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: ceph-osd
+    charm-rev: 278
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready (1 OSD)
+      since: 01 Apr 2019 14:52:05-04:00
+    relations:
+      mon:
+      - ceph-mon
+    units:
+      ceph-osd/0:
+        workload-status:
+          current: active
+          message: Unit is ready (1 OSD)
+          since: 01 Apr 2019 14:52:05-04:00
+        juju-status:
+          current: idle
+          since: 29 Mar 2019 16:39:20-04:00
+          version: 2.3.7
+        leader: true
+        machine: "3"
+        public-address: 172.27.101.116
+      ceph-osd/1:
+        workload-status:
+          current: active
+          message: Unit is ready (1 OSD)
+          since: 01 Apr 2019 14:51:34-04:00
+        juju-status:
+          current: idle
+          since: 29 Mar 2019 16:39:14-04:00
+          version: 2.3.7
+        machine: "4"
+        public-address: 172.27.101.117
+      ceph-osd/2:
+        workload-status:
+          current: active
+          message: Unit is ready (1 OSD)
+          since: 01 Apr 2019 14:54:21-04:00
+        juju-status:
+          current: idle
+          since: 29 Mar 2019 16:39:15-04:00
+          version: 2.3.7
+        machine: "5"
+        public-address: 172.27.101.118
+    version: 10.2.11
+  easyrsa:
+    charm: cs:~containers/easyrsa-185
+    series: bionic
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: easyrsa
+    charm-rev: 185
+    exposed: false
+    application-status:
+      current: active
+      message: Certificate Authority connected.
+      since: 01 Apr 2019 14:52:48-04:00
+    relations:
+      client:
+      - etcd
+      - kubeapi-load-balancer
+      - kubernetes-master
+      - kubernetes-worker
+    units:
+      easyrsa/8:
+        workload-status:
+          current: active
+          message: Certificate Authority connected.
+          since: 01 Apr 2019 14:52:48-04:00
+        juju-status:
+          current: idle
+          since: 01 Apr 2019 11:07:22-04:00
+          version: 2.3.7
+        leader: true
+        machine: "47"
+        public-address: 172.27.101.152
+    version: 3.0.1
+  etcd:
+    charm: cs:~containers/etcd-319
+    series: bionic
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: etcd
+    charm-rev: 319
+    exposed: false
+    application-status:
+      current: active
+      message: Healthy with 1 known peer
+      since: 01 Apr 2019 14:53:33-04:00
+    relations:
+      certificates:
+      - easyrsa
+      cluster:
+      - etcd
+      db:
+      - flannel
+      - kubernetes-master
+    units:
+      etcd/10:
+        workload-status:
+          current: active
+          message: Healthy with 1 known peer
+          since: 01 Apr 2019 14:53:33-04:00
+        juju-status:
+          current: idle
+          since: 01 Apr 2019 11:07:51-04:00
+          version: 2.3.7
+        leader: true
+        machine: "48"
+        open-ports:
+        - 2379/tcp
+        public-address: 172.27.101.153
+    version: 3.2.10
+  flannel:
+    charm: cs:~containers/flannel-340
+    series: bionic
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: flannel
+    charm-rev: 340
+    exposed: false
+    application-status:
+      current: active
+      message: Flannel subnet 10.1.87.1/24
+      since: 01 Apr 2019 14:54:01-04:00
+    relations:
+      cni:
+      - kubernetes-master
+      - kubernetes-worker
+      etcd:
+      - etcd
+    subordinate-to:
+    - kubernetes-master
+    - kubernetes-worker
+    version: 0.10.0
+  kubeapi-load-balancer:
+    charm: cs:~containers/kubeapi-load-balancer-503
+    series: bionic
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: kubeapi-load-balancer
+    charm-rev: 503
+    exposed: true
+    application-status:
+      current: active
+      message: Loadbalancer ready.
+      since: 01 Apr 2019 14:55:39-04:00
+    relations:
+      apiserver:
+      - kubernetes-master
+      certificates:
+      - easyrsa
+      loadbalancer:
+      - kubernetes-master
+      website:
+      - kubernetes-worker
+    units:
+      kubeapi-load-balancer/5:
+        workload-status:
+          current: active
+          message: Loadbalancer ready.
+          since: 01 Apr 2019 14:55:39-04:00
+        juju-status:
+          current: idle
+          since: 01 Apr 2019 11:06:11-04:00
+          version: 2.3.7
+        leader: true
+        machine: "49"
+        open-ports:
+        - 443/tcp
+        public-address: 172.27.101.154
+    version: 1.14.0
+  kubernetes-master:
+    charm: cs:~containers/kubernetes-master-522
+    series: bionic
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: kubernetes-master
+    charm-rev: 522
+    exposed: false
+    application-status:
+      current: active
+      message: Kubernetes master running.
+      since: 01 Apr 2019 14:52:42-04:00
+    relations:
+      ceph-storage:
+      - ceph-mon
+      certificates:
+      - easyrsa
+      cni:
+      - flannel
+      etcd:
+      - etcd
+      kube-api-endpoint:
+      - kubeapi-load-balancer
+      kube-control:
+      - kubernetes-worker
+      loadbalancer:
+      - kubeapi-load-balancer
+    units:
+      kubernetes-master/9:
+        workload-status:
+          current: active
+          message: Kubernetes master running.
+          since: 01 Apr 2019 14:52:42-04:00
+        juju-status:
+          current: idle
+          since: 01 Apr 2019 11:22:14-04:00
+          version: 2.3.7
+        leader: true
+        machine: "50"
+        open-ports:
+        - 6443/tcp
+        public-address: 172.27.101.156
+        subordinates:
+          flannel/15:
+            workload-status:
+              current: active
+              message: Flannel subnet 10.1.87.1/24
+              since: 01 Apr 2019 14:54:01-04:00
+            juju-status:
+              current: idle
+              since: 01 Apr 2019 11:07:46-04:00
+              version: 2.3.7
+            leader: true
+            upgrading-from: cs:~containers/flannel-340
+            public-address: 172.27.101.156
+    version: 1.12.7
+  kubernetes-worker:
+    charm: cs:~containers/kubernetes-worker-378
+    series: bionic
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: kubernetes-worker
+    charm-rev: 378
+    exposed: true
+    application-status:
+      current: active
+      message: Kubernetes worker running.
+      since: 01 Apr 2019 14:53:08-04:00
+    relations:
+      certificates:
+      - easyrsa
+      cni:
+      - flannel
+      kube-api-endpoint:
+      - kubeapi-load-balancer
+      kube-control:
+      - kubernetes-master
+    units:
+      kubernetes-worker/14:
+        workload-status:
+          current: active
+          message: Kubernetes worker running.
+          since: 01 Apr 2019 14:53:08-04:00
+        juju-status:
+          current: idle
+          since: 01 Apr 2019 11:18:26-04:00
+          version: 2.3.7
+        leader: true
+        machine: "51"
+        open-ports:
+        - 80/tcp
+        - 443/tcp
+        public-address: 172.27.101.155
+        subordinates:
+          flannel/16:
+            workload-status:
+              current: active
+              message: Flannel subnet 10.1.20.1/24
+              since: 01 Apr 2019 14:51:44-04:00
+            juju-status:
+              current: idle
+              since: 01 Apr 2019 11:07:26-04:00
+              version: 2.3.7
+            upgrading-from: cs:~containers/flannel-340
+            public-address: 172.27.101.155
+      kubernetes-worker/15:
+        workload-status:
+          current: active
+          message: Kubernetes worker running.
+          since: 01 Apr 2019 14:56:06-04:00
+        juju-status:
+          current: idle
+          since: 01 Apr 2019 11:18:28-04:00
+          version: 2.3.7
+        machine: "52"
+        open-ports:
+        - 80/tcp
+        - 443/tcp
+        public-address: 172.27.101.157
+        subordinates:
+          flannel/17:
+            workload-status:
+              current: active
+              message: Flannel subnet 10.1.96.1/24
+              since: 01 Apr 2019 14:52:41-04:00
+            juju-status:
+              current: idle
+              since: 01 Apr 2019 11:09:17-04:00
+              version: 2.3.7
+            upgrading-from: cs:~containers/flannel-340
+            public-address: 172.27.101.157
+    version: 1.12.7
+storage: {}
